@@ -11,11 +11,11 @@ def praat_read(file: str) -> pd.DataFrame:
 
 def praat_draw(dataframe: pd.DataFrame) -> None:
 
-    lf_vowels = {'vowel' : ['i' , 'ɛ' , 'u', 'ɯ' , 'ɔ' , 'ɑ', 'y' , 'o' , 'ø' , 'e' , 'ɤ' , 'œ' , 'ʌ' , 'ɒ', 'ɶ' , 'a'],
+    cardinal_vowels = {'vowel' : ['i' , 'ɛ' , 'u', 'ɯ' , 'ɔ' , 'ɑ', 'y' , 'o' , 'ø' , 'e' , 'ɤ' , 'œ' , 'ʌ' , 'ɒ', 'ɶ' , 'a'],
                 'F1' :     [240 , 610 , 250, 300 , 500 , 750, 235 , 360 , 370 , 390 , 460 , 585 , 600 , 700, 820 , 850],
                 'F2' :     [2400, 1900, 595, 1390, 700 , 940, 2100, 640 , 1900, 2300, 1310, 1710, 1170, 760, 1530, 1610]}
 
-    df = pd.DataFrame(lf_vowels)
+    df = pd.DataFrame(cardinal_vowels)
 
     fig, ax = plt.subplots(figsize=(10,8))
 
