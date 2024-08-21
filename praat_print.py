@@ -54,11 +54,7 @@ def praat_draw(dataframe: pd.DataFrame) -> None:
     plt.xticks(np.arange(300, 2700, step=300))
     plt.show()
 
-
-
-def main(file: str):
+if __name__ == "__main__":
+    file = "puedo.txt"
     df_praat = praat_read(file)
     praat_draw(df_praat)
-
-main('puedo.txt')
-    
