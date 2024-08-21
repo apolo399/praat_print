@@ -55,6 +55,4 @@ def praat_draw(dataframe: pd.DataFrame) -> None:
     plt.show()
 
 if __name__ == "__main__":
-    file = "puedo.txt"
-    df_praat = praat_read(file)
-    praat_draw(df_praat)
+    praat_draw(praat_read("puedo.txt"))
